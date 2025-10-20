@@ -1,0 +1,42 @@
+[
+  {
+    "id": "maq-ultra",
+    "name": "ULTRA Patty Maker (Empanadas/Arepas)",
+    "price": 32500.00,
+    "description": "Máquina de alta producción (hasta 1800 uni/hora) para empanadas/arepas de masa de maíz. Moldes reemplazables. No requiere compresores.",
+    "imageUrl": "maquinaempanadas.avif",
+    "stock": 5
+  },
+  {
+    "id": "maq-super",
+    "name": "SUPER Patty Maker (Empanadas)",
+    "price": 24000.00,
+    "description": "Máquina semi-automática con capacidad de 900 uni/hora. Ideal para pequeños y medianos comerciantes que quuieren aumentar su producción.",
+    "imageUrl": "superpatty.avif",
+    "stock": 8
+  },
+  {
+    "id": "maq-opti",
+    "name": "OPTI Patty Maker (Inicio de Producción)",
+    "price": 15000.00,
+    "description": "Máquina compacta y fácil de usar, con un rendimiento de 480 uni/hora. Perfecta para emprendimientos y bajo volumen.",
+    "imageUrl": "maquinaempanadas.avif",
+    "stock": 12
+  },
+  {
+    "id": "maq-burrito",
+    "name": "Línea Automática de Fajitas y Burritos",
+    "price": 85000.00,
+    "description": "Sistema integrado para calentar tortillas, dosificar, enrollar y sellar burritos y fajitas. Capacidad de 1000 unidades/hora.",
+    "imageUrl": "burritos.png",
+    "stock": 3
+  },
+  {
+    "id": "maq-bunuelo",
+    "name": "Freidora y Dosificadora de Buñuelos",
+    "price": 9800.99,
+    "description": "Máquina de freído continuo con dosificador automático de masa para buñuelos perfectos. Alta eficiencia energética. Capacidad de 500 unidades/hora.",
+    "imageUrl": "Maq_buñuelos.png",
+    "stock": 15
+  }
+]
