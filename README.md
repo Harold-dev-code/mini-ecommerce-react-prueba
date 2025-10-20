@@ -36,21 +36,53 @@ Se eligió **Zustand** por su ligereza. Las optimizaciones clave realizadas para
 ## 🛠️ Instrucciones de Instalación
 
 Para levantar y probar el proyecto:
+-Esta aplicación requiere que tengas instalado **Node.js** (v16 o superior) y **Git** en tu sistema operativo.
+puedes verificAr desde tu terminal usando node -v    npm -v    git --version
 
 1.  **Clonar el repositorio:**
+Para obtener el código fuente, utiliza el siguiente comando. Asegúrate de poner la URL real de tu repositorio de GitHub.
     ```bash
     git clone [TU_REPO_AQUI]
-    cd [nombre-del-repo]
-    ```
+      ```
+    **Entra al directorio raíz del proyecto con:** 
+    
+    ```cd [el nombre de la carpeta creada por Git]```
+    
+    **ejemplo:**
+    
+    ```git clone https://github.com/usuario/mi-prueba-react.git```
+    
+       ``` cd mi-prueba-react```
 
-2.  **Instalar dependencias:**
+
+3.  **Instalar dependencias:**
     ```bash
     npm install
     ```
 
-3.  **Ejecutar el servidor de desarrollo:**
+4.  **Ejecutar el servidor de desarrollo:**
     ```bash
     npm run dev
     ```
 
 El proyecto estará disponible en `http://localhost:5173/`.
+
+## 🧩 Tecnologías Utilizadas
+
+| Categoría          | Tecnología   | Descripción                                               |
+| :----------------- | :----------- | :-------------------------------------------------------- |
+| **Frontend**       | React + Vite | Framework y bundler moderno para desarrollo rápido.       |
+| **Estado Global**  | Zustand      | Librería ligera y eficiente para manejo de estado global. |
+| **Estilos**        | CSS3         | Estilos modulares aplicados mediante clases.              |
+| **Persistencia**   | localStorage | Mantiene los datos del carrito entre sesiones.            |
+
+
+## 🙋 Contacto y Autoría
+
+| Detalle | Información |
+| :--- | :--- |
+| **Autor** | Harold Agudelo |
+| **Email** | harold3083@gmail.com |
+| **Portafolio / Código** | [haroldsolocode](https://github.com/haroldsolocode) (GitHub) |
+| **Enfoque del Proyecto** | Soluciones de e-commerce especializadas en automatización y maquinaria industrial. |
+
