@@ -2,10 +2,16 @@ import { useCartStore } from '../store/useCartStore';
 import CartItem from '../components/CartItem';
 import CartSummary from '../components/CartSummary';
 import '../App.css'; // Importar los estilos
+import { useNavigate } from 'react-router-dom'; // Importar useNavigate
 
 function ShoppingCart() {
-  // 💡 Conexión con Zustand: Solo necesitamos leer la lista de ítems
-  const cartItems = useCartStore(state => state.cartItems);
+  const { cartItems, clearCart, checkout } = useCartStore();
+  const navigate = useNavigate(); // Hook para navegar
+
+  const handleCheckout = () => {
+    checkout(); // Llama a la acción de checkout para limpiar el carrito
+    navigate('/thank-you'); // Redirige a la página de agradecimiento
+  };
 
   if (cartItems.length === 0) {
     return (
@@ -22,7 +28,6 @@ function ShoppingCart() {
     <div className="cart-container">
       <h1>Carrito de Compras</h1>
       
-      {/* 1. Tabla de Ítems */}
       <table className="cart-table">
         <thead>
           <tr>
@@ -34,15 +39,26 @@ function ShoppingCart() {
           </tr>
         </thead>
         <tbody>
-          {/* 2. Mapeo: Pasa cada ítem del carrito al componente presentacional CartItem */}
           {cartItems.map(item => (
             <CartItem key={item.id} item={item} />
           ))}
         </tbody>
       </table>
+       <CartSummary />
+      <div className="cart-actions">
+        {cartItems.length > 0 && (
+          <>
+            <button onClick={clearCart} className="clear-cart-button">
+              Limpiar Carrito
+            </button>
+            <button onClick={handleCheckout} className="checkout-button">
+              Pagar
+            </button>
+          </>
+        )}
+      </div>
       
-      {/* 3. Resumen de Pago */}
-      <CartSummary />
+     
     </div>
   );
 }

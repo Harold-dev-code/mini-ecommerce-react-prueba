@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
 // Importar directamente el mock de datos
-import Maquinas from '../data/products.json'; 
+import Maquinas from '../data/products.json';
 import '../App.css'; // Importar los estilos
 
 // ----------------------------------------------------
@@ -25,30 +25,23 @@ function ProductList() {
   }, []);
 
   if (products.length === 0) {
-    return (
-      <h1 className="product-list-loading">
-        Cargando Productos...
-      </h1>
-    );
+    return <h1 className="product-list-loading">Cargando Productos...</h1>;
   }
 
   return (
     <div className="product-list-container">
-      <h1 className="product-list-title">
-        Catálogo Machines
-      </h1>
+      <h1 className="product-list-title">Catálogo Machines</h1>
       
-      {/* 3. Mapeo y Renderizado: Itera sobre el array de productos */}
+      
+    {/* 3. Mapeo y Renderizado: Itera sobre el array de productos */}
       <div className="product-list">
         {products.map(product => (
           // Por cada producto, renderiza el Componente Presentacional
           <ProductCard 
-            key={product.id} // **La clave 'key' es obligatoria para React y rendimiento**
+            key={product.id}
             product={product} // Le pasamos el objeto completo como prop a productCard
-            
           />
-        ))
-      }
+        ))}
       </div>
     </div>
   );

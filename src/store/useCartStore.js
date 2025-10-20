@@ -86,6 +86,12 @@ export const useCartStore = create((set, get) => ({
     updateLocalStorage([]);
   },
 
+  // VACIAR el carrito
+  clearCart: () => {
+    set({ cartItems: [] });
+    updateLocalStorage([]);
+  },
+
   // ACCIONES...
 }));
 
