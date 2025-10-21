@@ -44,16 +44,10 @@ Para obtener el código fuente, desde una termianal de comandos ubicate en la ca
     ```bash
     git clone https://github.com/Harold-dev-code/mini-ecommerce-react-prueba.git
       ```
-    **Entra al directorio raíz del proyecto con:** 
-    
-    ```cd [el nombre de la carpeta creada por Git]```
-    
-    **ejemplo:**
-    
-    ```git clone https://github.com/usuario/mi-prueba-react.git```
-    
-       ``` cd mi-prueba-react```
-
+2. **Entra al directorio raíz del proyecto con:** 
+    ```bash
+    cd mini-ecommerce-react
+    ```
 
 3.  **Instalar dependencias:**
     ```bash
