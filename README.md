@@ -40,9 +40,9 @@ Para levantar y probar el proyecto:
 puedes verificAr desde tu terminal usando node -v    npm -v    git --version
 
 1.  **Clonar el repositorio:**
-Para obtener el código fuente, utiliza el siguiente comando. Asegúrate de poner la URL real de tu repositorio de GitHub.
+Para obtener el código fuente, desde una termianal de comandos ubicate en la carpeta deseada para poner el proyecto y utiliza el siguiente comando:
     ```bash
-    git clone [TU_REPO_AQUI]
+    git clone https://github.com/Harold-dev-code/mini-ecommerce-react-prueba.git
       ```
     **Entra al directorio raíz del proyecto con:** 
     
